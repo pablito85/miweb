@@ -4,7 +4,7 @@ pipeline {
 
     stages {
 
-        stage(‘container’) {
+        stage(‘delete’) {
 
             steps {
 
