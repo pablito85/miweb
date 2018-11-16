@@ -9,14 +9,10 @@ pipeline {
             steps {
 
                 sh "docker container prune -f —-filter “until=15m”"
-
-            }
-            
-            steps {
-
                 sh "docker image prune -f —-filter “until=15m”"
 
             }
+            
 
         }
 
