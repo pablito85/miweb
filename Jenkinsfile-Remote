@@ -8,8 +8,8 @@ pipeline {
 
             steps {
 
-                sh "git add test"
-		sh 'git commit -m "updating test"'
+                sh "git add Jenkinsfile-Remote"
+		sh 'git commit -m "another one"'
 		sh "git push primary"
 
             }
