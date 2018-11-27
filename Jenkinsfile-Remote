@@ -1,6 +1,6 @@
 pipeline {
 
-  String[] repos = [ 'https://github.com/pablito85/miweb.git' , 'https://github.com/pablito85/miweb2.git' ]
+  def repos = [ "https://github.com/pablito85/miweb.git" , "https://github.com/pablito85/miweb2.git" ]
   
  agent any
 
