@@ -1,11 +1,9 @@
 pipeline {
 
  agent any
- parameters {
 
 repos = 'https://github.com/pablito85/miweb.git'
 
- }          
     stages {
 
         stage(‘delete’) {
