@@ -8,7 +8,9 @@ pipeline {
 
             steps {
 
-                sh "git add updating-remotes "
+                sh "git add test"
+		sh 'git commit -m "updating test"'
+		sh "git push primary"
 
             }
             
