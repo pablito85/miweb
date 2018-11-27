@@ -1,21 +1,13 @@
-pipeline {
-
- agent any
-
-    stages {
-
-        stage(‘delete’) {
-	  
-            steps {
-           
-              def repos = [ "https://github.com/pablito85/miweb.git" , "https://github.com/pablito85/miweb2.git" ] as String[]
-
-                sh "echo $repos"
-
+def String[] repos = [ "https://github.com/pablito85/miweb.git" , "https://github.com/pablito85/miweb2.git"]
+node {
+     
+        stage('running') {
+            for (int i = 0; i < repos.length; i++) {
+                variable=repos[i]
+                sh (script: """
+                   git add remote $variable
+                """
+                )
             }
-
         }
-
     }
-
-}
