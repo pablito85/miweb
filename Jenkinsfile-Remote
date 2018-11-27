@@ -4,13 +4,11 @@ pipeline {
 
     stages {
 
-        stage(‘update’) {
-
+        stage(‘repos’) {
+repos = 'https://github.com/pablito85/miweb.git', 'https://github.com/pablito85/miweb2.git'
             steps {
-
-                sh "git add test"
-		sh 'git commit -m "updating test"'
-		sh "git push primary"
+              
+		sh "echo $repos"
 
             }
             
