@@ -1,8 +1,9 @@
 pipeline {
+   environment {
+repos = "https://github.com/pablito85/miweb.git"
+   }
 
  agent any
-
-repos = 'https://github.com/pablito85/miweb.git'
 
     stages {
 
