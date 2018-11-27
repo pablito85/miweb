@@ -3,7 +3,7 @@ pipeline {
  agent any
  parameters {
 
-def repos = https://github.com/pablito85/miweb.git
+def repos = 'https://github.com/pablito85/miweb.git'
 
  }          
     stages {
