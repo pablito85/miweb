@@ -2,7 +2,7 @@ pipeline {
 
     agent any
 
- def repos = ['https://github.com/pablito85/miweb.git', 'https://github.com/pablito85/miweb2.git']
+ repos = [https://github.com/pablito85/miweb.git, https://github.com/pablito85/miweb2.git]
            
     stages {
 
