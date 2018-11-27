@@ -1,9 +1,11 @@
 pipeline {
 
-    agent any
+ agent any
+ parameters {
 
 def repos = ["https://github.com/pablito85/miweb.git", "https://github.com/pablito85/miweb2.git"]
-           
+
+ }          
     stages {
 
         stage(‘delete’) {
